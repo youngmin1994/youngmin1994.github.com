@@ -1,0 +1,10 @@
+<h1>영화 전체목록</h1>
+<h2> <a href='/comments/new'>New comment 작성</a></h2>
+
+<p> <% @comments.each do |comment| %></p>
+
+<ul>
+<li> <a href='/comments/<%= comment.id%>'> <%= comment.title %> </a></li>    
+</ul>
+
+<%end%>

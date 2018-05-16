@@ -1,0 +1,9 @@
+<h1>영화 comment를 입력하세요</h1>
+
+<form action='/comments' method='POST'>
+<input type="hidden" name="authenticity_token" value= <%= @token %>>
+<input name='input_title' type='text' placeholer='제목'> </input>    
+<input name='input_content' type='text' placeholer='내용'> </input>
+<input type='submit'></input>
+    
+</form>
